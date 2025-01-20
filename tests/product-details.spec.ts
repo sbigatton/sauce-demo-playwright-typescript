@@ -10,7 +10,6 @@ import { Product } from "../models/product";
 import account from "../data/account.json";
 import products from "../data/products.json";
 
-
 const product = products.find(product => product.name === 'Sauce Labs Bike Light') as Product;
 
 test.describe('Product details page', () => {

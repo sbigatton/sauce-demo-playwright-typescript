@@ -9,7 +9,9 @@ import productsData from '../data/products.json';
 import account from '../data/account.json';
 import { BasePage } from '../pages/base-page';
 
-const products = productsData.map(p => new Product(p.name, p.description ?? "", p.image ?? "", p.price)) as Product[]; 
+const products : Product[] = productsData.map((p: any) => { 
+    return { name: p.name, description: p.description ?? "", image: p.image ?? "", price: p.price } 
+} ); 
 
 const productNames = products.map(product => product.name);
 

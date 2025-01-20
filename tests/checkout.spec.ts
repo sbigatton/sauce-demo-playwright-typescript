@@ -3,6 +3,7 @@ import { BasePage } from "../pages/base-page";
 import { LoginPage } from "../pages/login-page";
 import { Header } from "../pages/header";
 import { CartPage } from "../pages/cart-page";
+import { ProductListPage } from "../pages/product-list-page";
 import { CheckoutStepOnePage } from "../pages/checkout-step-one-page";
 import { CheckoutStepTwoPage } from "../pages/checkout-step-two-page";
 import { CheckoutCompletePage } from "../pages/checkout-complete-page";
@@ -11,7 +12,6 @@ import { Product } from "../models/product";
 
 import account from "../data/account.json";
 import products from "../data/products.json";
-import { ProductListPage } from "../pages/product-list-page";
 
 const productA = products.find(product => product.name === 'Sauce Labs Bike Light') as Product;
 const productB = products.find(product => product.name === 'Sauce Labs Bolt T-Shirt') as Product;  
